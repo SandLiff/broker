@@ -249,13 +249,15 @@ body {
   max-width: 100%;
 }
 
-.page__main {
-  min-height: 100vh;
+.no-webp .main-block{
+  background: url("../img/main/mainbg.png") center/cover no-repeat; }
+
+.main-block {
+  height: 100vh;
+  width: 100%;
 }
 
 .main-block__container {
-  position: relative;
-  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,8 +306,12 @@ body {
 }
 
 @media (min-width: 156.25em) {
+  .main-block {
+    height: 100rem;
+  }
+
   .main-block__container {
-    padding-top: 23.75rem;
+    padding-top: 31.25rem;
   }
 }
 
@@ -368,3 +374,5 @@ body {
             transform: scale(1.1);
   }
 }
+
+.webp .main-block{ background: url(../img/main/mainbg.webp) center/cover no-repeat; }
