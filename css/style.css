@@ -239,6 +239,12 @@ body {
   gap: 3.125rem;
 }
 
+.footer__link {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .footer__link img {
   max-width: 100%;
 }
@@ -297,6 +303,12 @@ body {
   }
 }
 
+@media (min-width: 156.25em) {
+  .main-block__container {
+    padding-top: 23.75rem;
+  }
+}
+
 @media (max-width: 20em) {
   .main-block__container {
     padding-top: 14.375rem;
@@ -347,4 +359,12 @@ body {
       font-size: calc(4.375rem + 1 * (100vw - 20rem) / 49.5625);
     }
 }
+}
+
+@media (any-hover: hover) {
+  .footer__link:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
