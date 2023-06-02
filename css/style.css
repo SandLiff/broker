@@ -250,13 +250,14 @@ body {
 }
 
 .no-webp .main-block{
-  background: url("../img/main/mainbg.png") center/cover no-repeat; }
+  background: url("../img/main/mainbg.jpg") center/cover no-repeat; }
 
 .main-block {
   height: 100vh;
 }
 
 .main-block__container {
+  padding-top: 14.375rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,10 +292,6 @@ body {
 }
 
 @media (min-width: 69.5625em) {
-  .main-block__container {
-    padding-top: 11.875rem;
-  }
-
   .main-block__brend:not(:last-child) {
     margin-bottom: 5.4375rem;
   }
@@ -304,6 +301,17 @@ body {
   }
 }
 
+@media (min-width: 106.25em) {
+  .main-block {
+    padding-top: 11.25rem;
+  }
+}
+
+@media (min-width: 137.5em) {
+  .no-webp .main-block{
+    background: url("../img/main/mainbg4k.jpg") center/cover no-repeat; }
+}
+
 @media (min-width: 156.25em) {
   .main-block__container {
     padding-top: 31.25rem;
@@ -311,10 +319,6 @@ body {
 }
 
 @media (max-width: 20em) {
-  .main-block__container {
-    padding-top: 14.375rem;
-  }
-
   .main-block__brend:not(:last-child) {
     margin-bottom: 1.25rem;
   }
@@ -325,18 +329,6 @@ body {
 }
 
 @media (min-width: 20em) and (max-width: 69.5625em) {
-@supports (padding-top: clamp( 11.875rem , 15.3838272383rem  +  -5.0441361917vw , 14.375rem )) {
-    .main-block__container {
-      padding-top: clamp( 11.875rem , 15.3838272383rem  +  -5.0441361917vw , 14.375rem );
-    }
-}
-
-@supports not (padding-top: clamp( 11.875rem , 15.3838272383rem  +  -5.0441361917vw , 14.375rem )) {
-    .main-block__container {
-      padding-top: calc(14.375rem + -2.5 * (100vw - 20rem) / 49.5625);
-    }
-}
-
 @supports (margin-bottom: clamp( 1.25rem , -0.4397856242rem  +  8.4489281211vw , 5.4375rem )) {
     .main-block__brend:not(:last-child) {
       margin-bottom: clamp( 1.25rem , -0.4397856242rem  +  8.4489281211vw , 5.4375rem );
@@ -363,6 +355,10 @@ body {
 }
 
 @media (any-hover: hover) {
+  .header__email:hover {
+    text-decoration: underline;
+  }
+
   .footer__link:hover {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
@@ -371,3 +367,8 @@ body {
 }
 
 .webp .main-block{ background: url(../img/main/mainbg.webp) center/cover no-repeat; }
+
+@media (min-width: 137.5em){
+
+  .webp .main-block{ background: url(../img/main/mainbg4k.webp) center/cover no-repeat; }
+}
