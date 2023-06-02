@@ -254,7 +254,6 @@ body {
 
 .main-block {
   height: 100vh;
-  width: 100%;
 }
 
 .main-block__container {
@@ -306,10 +305,6 @@ body {
 }
 
 @media (min-width: 156.25em) {
-  .main-block {
-    height: 100rem;
-  }
-
   .main-block__container {
     padding-top: 31.25rem;
   }
