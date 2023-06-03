@@ -250,7 +250,7 @@ body {
 }
 
 .no-webp .main-block{
-  background: url("../img/main/mainbg.jpg") center/cover no-repeat; }
+  background: url("../img/main/mainbg.png") center/cover no-repeat; }
 
 .main-block {
   height: 100vh;
@@ -301,15 +301,13 @@ body {
   }
 }
 
-@media (min-width: 106.25em) {
-  .main-block {
-    padding-top: 11.25rem;
-  }
-}
-
 @media (min-width: 137.5em) {
   .no-webp .main-block{
-    background: url("../img/main/mainbg4k.jpg") center/cover no-repeat; }
+    background: url("../img/main/mainbg4k.png") center/cover no-repeat; }
+
+  .main-block {
+    padding-top: 20rem;
+  }
 }
 
 @media (min-width: 156.25em) {
